@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Bryan's Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). The development of this app is still ongoing and some features are not yet enabled or working.
 
 ## Available Scripts
 
