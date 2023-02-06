@@ -1,0 +1,11 @@
+.contact {
+  height: 20vh;
+  background: rgb(40, 40, 40);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact svg path {
+  cursor: pointer;
+}

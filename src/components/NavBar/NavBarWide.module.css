@@ -1,0 +1,14 @@
+.nav-bar-wide nav ul li {
+  display: inline-block;
+  margin: 20px;
+}
+
+.nav-bar-wide nav ul li a:hover {
+  border-bottom: 4px solid green;
+}
+
+@media screen and (max-width: 599px) {
+  .nav-bar-wide {
+    display: none;
+  }
+}

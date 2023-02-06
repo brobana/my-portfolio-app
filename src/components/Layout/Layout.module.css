@@ -1,0 +1,38 @@
+.layout {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(40, 40, 40);
+  color: white;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 99;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.header-logo {
+  flex: 1 0 auto;
+}
+
+.header-nav-bar {
+  flex: 1 0 auto;
+}
+
+footer {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+}
