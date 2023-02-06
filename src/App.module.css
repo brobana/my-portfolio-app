@@ -1,0 +1,7 @@
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}

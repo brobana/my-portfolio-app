@@ -1,0 +1,19 @@
+.nav-bar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar nav ul li a {
+  text-decoration: none;
+  color: white;
+}

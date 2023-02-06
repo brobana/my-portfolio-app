@@ -1,0 +1,41 @@
+.nav-bar-narrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-bar-narrow nav ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgb(40, 40, 40);
+  text-align: center;
+  border-top: 2px gray solid;
+  padding-top: 1em;
+}
+
+.nav-bar-narrow nav ul li {
+  display: inline-block;
+  padding: 16px;
+  border-bottom: 1px solid rgb(83, 83, 83);
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.nav-bar-narrow nav ul li a:hover {
+  color: green;
+}
+
+.nav-bar-narrow svg path {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  .nav-bar-narrow {
+    display: none;
+  }
+}

@@ -1,0 +1,46 @@
+.work {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  border-top: 1px lightgray solid;
+  padding: 2rem;
+}
+
+.work h2 {
+  text-align: center;
+}
+
+.work-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.work-items {
+  flex: 1 1 40%;
+  text-decoration: none;
+  color: black;
+  padding: 0 2rem 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.work-items h2 {
+  text-align: left;
+}
+
+.work-items a {
+  text-decoration: none;
+  color: green;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 10px;
+  padding-top: 0.1rem;
+  padding-bottom: 0.2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.work-items a:hover {
+  background-color: rgba(144, 238, 144, 0.288);
+}
