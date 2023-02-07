@@ -12,12 +12,14 @@ const Contact = () => {
       <FaLinkedin
         color="white"
         size="3em"
-        onClick={onClickHandler('https://linkedin.com')}
+        onClick={onClickHandler(
+          'https://linkedin.com/in/bryan-obana-94638a265'
+        )}
       />
       <FaGithubSquare
         color="white"
         size="3em"
-        onClick={onClickHandler('https://github.com')}
+        onClick={onClickHandler('https://github.com/brobana')}
       />
     </div>
   );
