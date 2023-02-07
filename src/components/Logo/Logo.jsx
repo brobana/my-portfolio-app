@@ -4,8 +4,15 @@ import classes from './Logo.module.css';
 const Logo = () => {
   return (
     <div className={classes.logo}>
-      <HiCode color="green" size="1.8em" style={{ paddingRight: '0.3em' }} />
-      <p>bryanobana</p>
+      <a
+        href="/#home"
+        target="_self"
+        rel="noreferrer"
+        style={{ fontWeight: '400' }}
+      >
+        <HiCode color="green" size="1.2em" style={{ paddingRight: '0.2em', paddingTop: '0.2em' }} />
+        bryanobaña
+      </a>
     </div>
   );
 };

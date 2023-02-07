@@ -3,5 +3,22 @@
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  padding: 2rem 4rem 3.5rem;
+  padding: 2rem 6rem 4rem;
+}
+
+.container {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.container img {
+  flex: 1 1 0;
+  padding: 0 1rem 0;
+}
+
+.container .text {
+  flex: 4 1 0;
+  padding: 0 1rem 0;
 }
