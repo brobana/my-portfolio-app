@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { HiCode } from 'react-icons/hi';
 import { projectItems } from './ProjectsItems';
+
 import classes from './Projects.module.css';
 
 const ProjectItem = (props) => {

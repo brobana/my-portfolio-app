@@ -1,6 +1,7 @@
 import NavBar from '../NavBar/NavBar';
 import Logo from '../Logo/Logo';
 import { Outlet } from 'react-router-dom';
+
 import classes from './Layout.module.css';
 
 const Layout = () => {
@@ -17,7 +18,7 @@ const Layout = () => {
       <main>
         <Outlet />
       </main>
-      <footer>&copy; 2023 bryanobana.com</footer>
+      <footer>&copy; 2023 www.bryanobana.com</footer>
     </div>
   );
 };
