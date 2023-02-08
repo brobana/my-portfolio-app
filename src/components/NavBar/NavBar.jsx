@@ -1,6 +1,7 @@
-import classes from './NavBar.module.css';
 import NavBarNarrow from './NavBarNarrow';
 import NavBarWide from './NavBarWide';
+
+import classes from './NavBar.module.css';
 
 const NavBar = () => {
   return (

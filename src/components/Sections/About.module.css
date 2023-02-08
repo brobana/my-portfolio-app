@@ -3,22 +3,22 @@
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  padding: 2rem 6rem 4rem;
+  padding: 2rem 4rem 4rem;
 }
 
 .container {
   display: flex;
   flex-flow: row-reverse wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
+  padding-top: 1rem;
 }
 
 .container img {
   flex: 1 1 0;
-  padding: 0 1rem 0;
 }
 
 .container .text {
   flex: 4 1 0;
-  padding: 0 1rem 0;
+  min-width: 15rem;
 }

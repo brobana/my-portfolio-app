@@ -5,7 +5,7 @@ import classes from './NavBarWide.module.css';
 const NavBarWide = () => {
   return (
     <div className={classes['nav-bar-wide']}>
-      <NavBarItems />
+      <NavBarItems onSetIsOpen={() => {}} />
     </div>
   );
 };

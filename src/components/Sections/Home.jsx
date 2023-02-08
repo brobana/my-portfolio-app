@@ -1,5 +1,6 @@
-import classes from './Home.module.css';
 import background from '../../img/road.jpg';
+
+import classes from './Home.module.css';
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       style={{
         backgroundImage: `url(${background})`,
         backgroundPosition: '0% 90%',
+        opacity: '0.9'
       }}
     >
       <div className={classes.greeting}>
