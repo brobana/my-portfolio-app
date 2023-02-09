@@ -9,7 +9,7 @@ const Home = () => {
       className={classes.home}
       style={{
         backgroundImage: `url(${background})`,
-        backgroundPosition: '0% 90%',
+        backgroundPosition: '50% 90%',
         opacity: '0.9'
       }}
     >

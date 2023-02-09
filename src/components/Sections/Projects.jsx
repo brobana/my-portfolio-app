@@ -1,35 +1,37 @@
 import { Link } from 'react-router-dom';
 import { HiCode } from 'react-icons/hi';
-import { projectItems } from './ProjectsItems';
+import { projectData } from './ProjectsData';
 
 import classes from './Projects.module.css';
 
 const ProjectItem = (props) => {
   return (
-    <div className={classes['work-items']}>
+    <div className={classes['project-items']}>
       <h2>{props.title}</h2>
       <p>{props.description}</p>
-      <Link to={props.url}>Learn more ...</Link>
+      <Link to={props.url} target={props.openNewTab ? "_blank" : "_self"}>{props.word}</Link>
     </div>
   );
 };
 
 const Projects = () => {
   return (
-    <div id="projects" className={classes.work}>
+    <div id="projects" className={classes.project}>
       <h1>Some of the projects I developed</h1>
       <HiCode color="green" size="5em" style={{ paddingBottom: '2em' }} />
-      <div className={classes['work-container']}>
-        <ProjectItem
-          title={projectItems[0].title}
-          description={projectItems[0].description}
-          url={projectItems[0].url}
-        />
-        <ProjectItem
-          title={projectItems[1].title}
-          description={projectItems[1].description}
-          url={projectItems[1].url}
-        />
+      <div className={classes['project-container']}>
+        {projectData.map((item, index) => {
+          return (
+            <ProjectItem
+              key={index}
+              title={item.title}
+              description={item.description}
+              url={item.url}
+              word={item.word}
+              openNewTab={item.openNewTab}
+            />
+          );
+        })}
       </div>
     </div>
   );

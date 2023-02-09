@@ -4,8 +4,8 @@ import myPicture from '../../img/me.jpg';
 import classes from './About.module.css';
 
 const aboutMe = [
-  "I'm a developer from Lower Sackville, Nova Scotia, Canada, with over three years of experience in application development. I currently work for a technology consulting company in Bedford. You will find me to be confident, well-spoken, and eager to learn and explore new technologies. I have a passion for innovation and automation, and I have always enjoyed coding. As a hobby, I developed and maintain this website.",
-  'Prior to moving to Canada, I gained analytical, problem-solving, and programming skills through over ten years of technical support and implementation roles on various enterprise software in some multinational companies in the Philippines, where I was able to resolve issues and deliver codes to automate manual and repetitive tasks.',
+  "I'm an application developer with more than three years of experience from Lower Sackville, Nova Scotia, Canada. I'm currently employed with IBM Canada in Bedford, Nova Scotia. You'll discover that I'm articulate, self-assured, and ready to learn about and experiment with new technology. I've always loved coding, and I'm passionate about automation and innovation.",
+  'I spent over ten years in technical support and implementation roles on various enterprise software in some multinational companies in the Philippines, where I was able to analyze and resolve problems, and deliver codes to automate manual and repetitive work. This experience helped me develop my analytical, problem-solving, and programming skills before moving to Canada.',
 ];
 const About = () => {
   return (
@@ -15,8 +15,9 @@ const About = () => {
       <div className={classes.container}>
         <img src={myPicture} alt="It's me. Bryan." style={{ width: '14em' }} />
         <div className={classes.text}>
-          <p>{aboutMe[0]}</p>
-          <p>{aboutMe[1]}</p>
+          {aboutMe.map((text, index) => {
+            return <p key={index}>{text}</p>;
+          })}
         </div>
       </div>
     </div>

@@ -21,10 +21,16 @@ const App = () => {
             </div>
           }
         />
-        <Route path="tools">
-          <Route index path="" element={<p>Tools Landing Page</p>} />
-          <Route path="tool-one" element={<WorkPage />} />
-          <Route path="tool-two" element={<WorkPage />} />
+        <Route path="projects">
+          <Route
+            index
+            path=""
+            element={
+              <p style={{ paddingTop: '5rem', paddingLeft: '2rem' }}>Projects Landing Page</p>
+            }
+          />
+          <Route path="portfolio-website" element={<WorkPage />} />
+          <Route path="placeholder" element={<WorkPage />} />
         </Route>
       </Route>
     </Routes>
