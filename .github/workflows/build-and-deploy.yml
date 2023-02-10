@@ -1,3 +1,4 @@
+# Build, upload files to S3 bucket and then request CloudFront to invalidation all files
 name: build-and-deploy
 on:
   push:
@@ -5,7 +6,7 @@ on:
       - master
 jobs:
   run:
-    name: Build and upload to Amazon S3
+    name: Build, upload and invalidate
     runs-on: ubuntu-latest
     # These permissions are needed to interact with GitHub's OIDC Token endpoint.
     permissions:
@@ -29,8 +30,11 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
+          role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME_ARN }}
           aws-region: ${{ secrets.AWS_S3_BUCKET_REGION }}
 
       - name: Deploy to S3 bucket with the AWS CLI
         run: aws s3 sync ./build/ s3://${{secrets.AWS_S3_BUCKET}} --delete
+        
+      - name: Create CloudFront invalidation request for all files with the AWS CLI
+        run: aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_CLOUDFRONT_DISTRIBUTION_ID }} --paths '/*'
