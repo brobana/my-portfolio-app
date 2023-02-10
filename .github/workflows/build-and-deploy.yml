@@ -5,7 +5,7 @@ on:
       - master
 jobs:
   run:
-    name: Build then upload to Amazon S3
+    name: Build and upload to Amazon S3
     runs-on: ubuntu-latest
     # These permissions are needed to interact with GitHub's OIDC Token endpoint.
     permissions:
