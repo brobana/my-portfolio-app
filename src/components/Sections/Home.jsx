@@ -9,8 +9,8 @@ const Home = () => {
       className={classes.home}
       style={{
         backgroundImage: `url(${background})`,
-        backgroundPosition: '50% 90%',
-        opacity: '0.9'
+        backgroundPosition: '50% 65%',
+        opacity: '0.9',
       }}
     >
       <div className={classes.greeting}>

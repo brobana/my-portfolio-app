@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import Layout from './components/Layout/Layout';
 import HomeSection from './components/Sections/Home';
 import AboutSection from './components/Sections/About';
@@ -13,12 +14,12 @@ const App = () => {
         <Route
           index
           element={
-            <div>
+            <Fragment>
               <HomeSection />
               <AboutSection />
               <ProjectsSection />
               <ContactSection />
-            </div>
+            </Fragment>
           }
         />
         <Route path="projects">
@@ -26,7 +27,9 @@ const App = () => {
             index
             path=""
             element={
-              <p style={{ paddingTop: '5rem', paddingLeft: '2rem' }}>Projects Landing Page</p>
+              <p style={{ paddingTop: '5rem', paddingLeft: '2rem' }}>
+                Projects Landing Page
+              </p>
             }
           />
           <Route path="portfolio-website" element={<WorkPage />} />

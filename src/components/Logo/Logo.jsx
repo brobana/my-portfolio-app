@@ -1,4 +1,4 @@
-import { HiCode } from 'react-icons/hi';
+import { AiFillCode } from 'react-icons/ai';
 import classes from './Logo.module.css';
 
 const Logo = () => {
@@ -10,7 +10,11 @@ const Logo = () => {
         rel="noreferrer"
         style={{ fontWeight: '400' }}
       >
-        <HiCode color="green" size="1.2em" style={{ paddingRight: '0.2em', paddingTop: '0.2em' }} />
+        <AiFillCode
+          color="green"
+          size="1.2em"
+          style={{ paddingRight: '0.1em', paddingTop: '0.1em' }}
+        />
         bryanobaña
       </a>
     </div>

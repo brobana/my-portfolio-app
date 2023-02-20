@@ -4,7 +4,7 @@
 }
 
 .nav-bar-wide nav ul li a:hover {
-  border-bottom: 4px solid green;
+  border-bottom: 4px solid rgba(144, 238, 144, 0.6);
 }
 
 @media screen and (max-width: 599px) {

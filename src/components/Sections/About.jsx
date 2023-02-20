@@ -7,6 +7,7 @@ const aboutMe = [
   "I'm an application developer with more than three years of experience from Lower Sackville, Nova Scotia, Canada. I'm currently employed with IBM Canada in Bedford, Nova Scotia. You'll discover that I'm articulate, self-assured, and ready to learn about and experiment with new technology. I've always loved coding, and I'm passionate about automation and innovation.",
   'I spent over ten years in technical support and implementation roles on various enterprise software in some multinational companies in the Philippines, where I was able to analyze and resolve problems, and deliver codes to automate manual and repetitive work. This experience helped me develop my analytical, problem-solving, and programming skills before moving to Canada.',
 ];
+
 const About = () => {
   return (
     <div id="about" className={classes.about}>
@@ -20,6 +21,13 @@ const About = () => {
           })}
         </div>
       </div>
+      <div
+        style={{
+          borderBottom: '1px lightgray solid',
+          width: '100%',
+          paddingBottom: '3em',
+        }}
+      ></div>
     </div>
   );
 };

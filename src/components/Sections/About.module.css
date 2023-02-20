@@ -1,15 +1,13 @@
 .about {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
   align-items: center;
-  padding: 2rem 4rem 4rem;
+  padding: 2rem 4rem 0rem;
 }
 
 .container {
   display: flex;
   flex-flow: row-reverse wrap;
-  justify-content: space-around;
   align-items: flex-start;
   padding-top: 1rem;
 }
@@ -21,4 +19,11 @@
 .container .text {
   flex: 4 1 0;
   min-width: 15rem;
+}
+
+@media screen and (min-width: 1250px) {
+  .about {
+    width: 1100px;
+    margin: 0 auto;
+  }
 }
