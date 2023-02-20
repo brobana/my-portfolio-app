@@ -17,7 +17,7 @@ const ProjectItem = (props) => {
 const Projects = () => {
   return (
     <div id="projects" className={classes.project}>
-      <h1>Some of the projects I developed</h1>
+      <h1>Some of my personal projects</h1>
       <HiCode color="green" size="5em" style={{ paddingBottom: '2em' }} />
       <div className={classes['project-container']}>
         {projectData.map((item, index) => {
