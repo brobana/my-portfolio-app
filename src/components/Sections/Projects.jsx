@@ -9,7 +9,9 @@ const ProjectItem = (props) => {
     <div className={classes['project-items']}>
       <h2>{props.title}</h2>
       <p>{props.description}</p>
-      <Link to={props.url} target={props.openNewTab ? "_blank" : "_self"}>{props.word}</Link>
+      <Link to={props.url} target={props.openNewTab ? '_blank' : '_self'}>
+        {props.word}
+      </Link>
     </div>
   );
 };

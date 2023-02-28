@@ -8,12 +8,12 @@ const Logo = () => {
         href="/#home"
         target="_self"
         rel="noreferrer"
-        style={{ fontWeight: '400' }}
+        style={{ fontWeight: '400', paddingTop: '0.1em' }}
       >
         <AiFillCode
-          color="green"
-          size="1.2em"
-          style={{ paddingRight: '0.1em', paddingTop: '0.1em' }}
+          color="whitesmoke"
+          size="1.3em"
+          style={{ paddingRight: '0.1em' }}
         />
         bryanobaña
       </a>

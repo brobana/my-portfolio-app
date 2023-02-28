@@ -1,0 +1,33 @@
+.placeholder {
+  padding: 80px 2rem 2rem;
+  margin-bottom: 1rem;
+}
+
+.button {
+  font: inherit;
+  margin: 1.5rem 0;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid rgb(40, 40, 40);
+  color: white;
+  background: rgb(40, 40, 40);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover,
+.button:active {
+  background: rgba(40, 40, 40, 0.8);
+  border-color: rgb(40, 40, 40, 0.8);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.26);
+}
+
+@media screen and (min-width: 74.75rem) {
+  .placeholder {
+    width: 68.75rem;
+    margin: 0 auto;
+  }
+}
