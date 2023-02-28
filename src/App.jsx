@@ -4,7 +4,7 @@ import HomeSection from './components/Sections/Home';
 import AboutSection from './components/Sections/About';
 import ProjectsSection from './components/Sections/Projects';
 import ContactSection from './components/Sections/Contact';
-import WorkPage from './components/Pages/Projects/Placeholder';
+import ProjectPlaceholderPage from './components/Pages/ProjectPlaceholder';
 import { Routes, Route } from 'react-router-dom';
 
 const App = () => {
@@ -22,19 +22,10 @@ const App = () => {
             </Fragment>
           }
         />
-        <Route path="projects">
-          <Route
-            index
-            path=""
-            element={
-              <p style={{ paddingTop: '5rem', paddingLeft: '2rem' }}>
-                Projects Landing Page
-              </p>
-            }
-          />
-          <Route path="portfolio-website" element={<WorkPage />} />
-          <Route path="placeholder" element={<WorkPage />} />
-        </Route>
+        <Route
+          path="project-placeholder"
+          element={<ProjectPlaceholderPage />}
+        />
       </Route>
     </Routes>
   );
