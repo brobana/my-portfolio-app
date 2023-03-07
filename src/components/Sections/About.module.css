@@ -2,7 +2,7 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  padding: 2rem 3rem 0rem;
+  padding: 2rem 2rem 0rem;
 }
 
 .container {
@@ -21,7 +21,7 @@
   min-width: 15rem;
 }
 
-@media screen and (min-width: 74.75rem) {
+@media screen and (min-width: 72.75rem) {
   .about {
     width: 68.75rem;
     margin: 0 auto;

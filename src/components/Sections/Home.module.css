@@ -13,7 +13,7 @@
   flex-flow: column wrap;
   align-items: flex-start;
   justify-content: center;
-  padding: 2rem 3rem 0rem;
+  padding: 2rem 2rem 0rem;
   height: 40vh;
   color: white;
 }
@@ -27,7 +27,7 @@
   font-size: 1.5rem;
 }
 
-@media screen and (min-width: 74.75rem) {
+@media screen and (min-width: 72.75rem) {
   .greeting {
     width: 68.75rem;
     margin: 0 auto;
