@@ -10,7 +10,7 @@ const ScrollToTopButton = () => {
 
   useEffect(() => {
     const showScrollBtnHandler = () => {
-      window.pageYOffset > 300
+      window.pageYOffset > 250
         ? setShowScrollBtn(true)
         : setShowScrollBtn(false);
     };
