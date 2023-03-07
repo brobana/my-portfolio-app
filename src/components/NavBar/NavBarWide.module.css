@@ -1,6 +1,6 @@
 .nav-bar-wide nav ul li {
   display: inline-block;
-  margin: 20px;
+  margin: 16px 20px 20px
 }
 
 .nav-bar-wide nav ul li a:hover {

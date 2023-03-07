@@ -3,6 +3,7 @@ import Logo from '../Logo/Logo';
 import { Outlet } from 'react-router-dom';
 
 import classes from './Layout.module.css';
+import ScrollToTopButton from '../ScrollToTopButton/ScrollToTopButton';
 
 const Layout = () => {
   return (
@@ -19,6 +20,7 @@ const Layout = () => {
         <Outlet />
       </main>
       <footer>&copy; 2023 www.bryanobana.com</footer>
+      <ScrollToTopButton />
     </div>
   );
 };

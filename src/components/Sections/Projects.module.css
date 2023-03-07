@@ -2,13 +2,13 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem 0 4rem;
 }
 
 .project h1 {
   text-align: center;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 
 .project h2 {
@@ -52,7 +52,7 @@
   background-color: rgba(144, 238, 144, 0.288);
 }
 
-@media screen and (min-width: 74.75rem) {
+@media screen and (min-width: 72.75rem) {
   .project {
     width: 72.75rem;
     margin: 0 auto;
