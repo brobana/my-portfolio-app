@@ -4,8 +4,9 @@ import myPicture from '../../img/me.jpg';
 import classes from './About.module.css';
 
 const aboutMe = [
-  "I'm an application developer with more than three years of experience from Lower Sackville, Nova Scotia, Canada. I'm currently employed with IBM Canada in Bedford, Nova Scotia. You'll discover that I'm articulate, self-assured, and ready to learn about and experiment with new technology. I've always loved coding, and I'm passionate about automation and innovation.",
-  'I spent over ten years in technical support and implementation roles on various enterprise software in some multinational companies in the Philippines, where I was able to analyze and resolve problems, and deliver codes to automate manual and repetitive work. This experience helped me develop my analytical, problem-solving, and programming skills before moving to Canada.',
+  "I am an application developer with over four years of experience, based in Lower Sackville, Nova Scotia, Canada. I am articulate, self-assured, and eager to explore and experiment with new technology. Coding has always been a passion of mine, and I am deeply interested in automation and innovation.",
+  'Before moving to Canada, I spent over ten years in technical support and implementation roles for enterprise software in multinational companies in the Philippines. During this time, I honed my analytical, problem-solving, and programming skills by resolving issues and automating manual tasks. This experience laid the foundation for my transition into development.',
+  'Looking ahead, I am eager to further advance my full-stack development capabilities, particularly in cloud-based technologies like AWS. I am passionate about contributing to innovative projects that leverage automation and cutting-edge technology, and I am always on the lookout for opportunities that will allow me to grow and make a significant impact.',
 ];
 
 const About = () => {

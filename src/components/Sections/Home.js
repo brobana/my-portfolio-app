@@ -14,8 +14,8 @@ const Home = () => {
       }}
     >
       <div className={classes.greeting}>
-        <h1>Hi, I'm Bryan.</h1>
-        <h2>Thank you for visiting my website.</h2>
+        <h1>Hello, there!</h1>
+        <h3>I'm Bryan, passionate about coding, automation, and cloud technologies.</h3>
       </div>
     </div>
   );

@@ -19,7 +19,7 @@ const Layout = () => {
       <main>
         <Outlet />
       </main>
-      <footer>&copy; 2023 www.bryanobana.com</footer>
+      <footer>&copy; 2024 www.bryanobana.com</footer>
       <ScrollToTopButton />
     </div>
   );
